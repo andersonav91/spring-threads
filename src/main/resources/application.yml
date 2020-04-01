@@ -1,0 +1,13 @@
+server:
+  port: ${APP_PORT}
+consejosano:
+  cron:
+    # this in minutes
+    delay-between-executions: ${CRON-DELAY-BETWEEN-EXECUTIONS}
+    threads-number: ${CRON-THREADS}
+spring:
+  application:
+    name: ConsejoSanoStatus
+logging:
+  level:
+    ROOT: ${LOG_LEVEL:#{'ERROR'}}
